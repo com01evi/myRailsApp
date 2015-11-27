@@ -11,14 +11,14 @@ web:
     environment:
         # - PATH=/root/.local/bin:$PATH
         - HOST=0.0.0.0
-        - APPROOT=http://localhost:3000
+        - APPROOT=http://localhost:3001
         - PGUSER=postgres
         - PGPASS
         - PGHOST=postgres
     volumes:
         - .:/myapp
     ports:
-        - "3000:3000"
+        - "3001:3000"
     links:
         - db
 
