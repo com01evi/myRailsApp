@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: postgres
+  database: myapp
   username: postgres
   pool: 5
   password:
